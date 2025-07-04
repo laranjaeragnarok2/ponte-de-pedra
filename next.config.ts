@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.parauna.go.gov.br',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.pasteboard.co',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
