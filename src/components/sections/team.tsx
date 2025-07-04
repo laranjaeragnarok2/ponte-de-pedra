@@ -2,10 +2,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const teamMembers = [
-  { name: "Ana Clara", role: "Diretora e Roteirista", image: "https://placehold.co/100x100.png", hint: "woman face" },
-  { name: "Bruno Gomes", role: "Diretor de Fotografia", image: "https://placehold.co/100x100.png", hint: "man face" },
-  { name: "Carla Dias", role: "Produtora Executiva", image: "https://placehold.co/100x100.png", hint: "woman face glasses" },
-  { name: "Daniel Rocha", role: "Editor e Colorista", image: "https://placehold.co/100x100.png", hint: "man face beard" },
+  { name: "Ana Clara", role: "Arqueóloga e Coordenadora do Projeto", image: "https://placehold.co/100x100.png", hint: "woman face" },
+  { name: "Bruno Gomes", role: "Geólogo e Consultor Ambiental", image: "https://placehold.co/100x100.png", hint: "man face" },
+  { name: "Carla Dias", role: "Produtora Cultural e Articuladora", image: "https://placehold.co/100x100.png", hint: "woman face glasses" },
+  { name: "Daniel Rocha", role: "Cineasta e Documentarista da Ação", image: "https://placehold.co/100x100.png", hint: "man face beard" },
 ];
 
 export function Team() {

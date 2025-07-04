@@ -13,14 +13,11 @@ export function Hero() {
           Ponte de Pedra: Um Legado a Preservar
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground/90 [text-shadow:_1px_1px_2px_rgb(0_0_0_/_40%)]">
-          Um curta-metragem que lança luz sobre a história e a necessidade urgente de preservação da icônica Ponte de Pedra. Junte-se a nós nesta causa.
+          Um curta-metragem que lança luz sobre a história e a necessidade urgente de preservação da icônica Ponte de Pedra. Junte-se a nós e seja parte dessa história de salvaguarda.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-8">
           <Button size="lg" asChild>
-            <a href="#jornada">Nossa Jornada</a>
-          </Button>
-          <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-            <a href="#galeria">Ver Galeria</a>
+            <a href="#jornada">Assista ao Curta-Metragem</a>
           </Button>
         </div>
       </div>
