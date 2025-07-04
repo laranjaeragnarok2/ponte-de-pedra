@@ -2,12 +2,12 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
 const galleryImages = [
-  { src: "https://placehold.co/600x400.png", alt: "Vista da Ponte de Pedra ao amanhecer", hint: "bridge sunrise" },
-  { src: "https://placehold.co/600x400.png", alt: "Detalhe dos arcos da ponte", hint: "bridge architecture" },
-  { src: "https://placehold.co/600x400.png", alt: "Rio correndo sob a ponte", hint: "river bridge" },
-  { src: "https://placehold.co/600x400.png", alt: "Equipe de filmagem em ação", hint: "film crew" },
-  { src: "https://placehold.co/600x400.png", alt: "Ponte de Pedra em preto e branco", hint: "bridge monochrome" },
-  { src: "https://placehold.co/600x400.png", alt: "Vista aérea da ponte", hint: "drone bridge" },
+  { src: "https://i.postimg.cc/Y0HvVm2d/015920127f3e3555ed2c0d71f620363e.jpg", alt: "Vista da Ponte de Pedra" },
+  { src: "https://i.postimg.cc/WbsDwrH3/49f29e143ce544d4e038a90a8fc4b336.jpg", alt: "Detalhe dos arcos da ponte" },
+  { src: "https://i.postimg.cc/dQ2kCnnp/72f24337a6e4b553a8f96907b49ea072.jpg", alt: "Rio correndo sob a ponte" },
+  { src: "https://i.postimg.cc/wBnyXGC8/9d010bd80656c2cae903908f7c22693c.jpg", alt: "Ponte de Pedra e vegetação" },
+  { src: "https://i.postimg.cc/SNGMBVMC/eccb837a0c89f08bf9e9bc061ae3a9bf.jpg", alt: "Ponte de Pedra em preto e branco" },
+  { src: "https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg", alt: "Vista aérea da ponte" },
 ];
 
 export function Gallery() {
@@ -32,7 +32,6 @@ export function Gallery() {
                   width={600}
                   height={400}
                   className="w-full h-full object-cover aspect-video transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint={image.hint}
                 />
               </CardContent>
             </Card>

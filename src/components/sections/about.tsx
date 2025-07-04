@@ -20,12 +20,11 @@ export function About() {
           <Card>
             <CardContent className="p-0">
               <Image
-                src="https://placehold.co/600x450.png"
+                src="https://i.postimg.cc/MHmn8Kvq/b780c2d3a639c4e51055af8d06af8e11.jpg"
                 alt="Ponte de Pedra"
                 width={600}
                 height={450}
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
-                data-ai-hint="historic bridge"
               />
             </CardContent>
           </Card>
