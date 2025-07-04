@@ -52,7 +52,7 @@ export function Footer() {
 
         <div className="mt-12 border-t pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Legado da Ponte de Pedra. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Legado da Ponte de Pedra. Todos os direitos reservados.</p>
             <div className="flex items-center gap-2">
               <p>
                 Feito com amor por{' '}
