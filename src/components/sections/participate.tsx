@@ -11,7 +11,7 @@ const partners = [
 
 export function Participate() {
   return (
-    <section id="participe" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section id="participe" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-6">
@@ -32,7 +32,7 @@ export function Participate() {
             </div>
             <Button size="lg">Assista ao Curta</Button>
           </div>
-          <Card className="bg-background">
+          <Card>
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold font-headline mb-6">Apoio Institucional</h3>
               <ul className="space-y-4">

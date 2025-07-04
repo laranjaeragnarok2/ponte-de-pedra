@@ -11,6 +11,7 @@ const navLinks = [
   { href: '#equipe', label: 'A Equipe' },
   { href: '#galeria', label: 'Galeria' },
   { href: '#localizacao', label: 'Localização' },
+  { href: '#abaixo-assinado', label: 'Abaixo-Assinado' },
 ];
 
 export function Header() {

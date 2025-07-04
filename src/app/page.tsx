@@ -7,6 +7,7 @@ import { Team } from "@/components/sections/team";
 import { Gallery } from "@/components/sections/gallery";
 import { Location } from "@/components/sections/location";
 import { Participate } from "@/components/sections/participate";
+import { Petition } from "@/components/sections/petition";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Team />
         <Gallery />
         <Location />
+        <Petition />
         <Participate />
       </main>
       <Footer />
