@@ -43,7 +43,7 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="font-semibold font-headline text-lg">Siga a Causa</h4>
             <div className="flex space-x-4">
-              <a href="#" aria-label="Instagram" className="text-muted-foreground transition-colors hover:text-primary"><Instagram className="h-6 w-6" /></a>
+              <a href="https://www.instagram.com/horyu.multimedia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground transition-colors hover:text-primary"><Instagram className="h-6 w-6" /></a>
               <a href="#" aria-label="YouTube" className="text-muted-foreground transition-colors hover:text-primary"><Youtube className="h-6 w-6" /></a>
               <a href="#" aria-label="Facebook" className="text-muted-foreground transition-colors hover:text-primary"><Facebook className="h-6 w-6" /></a>
             </div>
@@ -55,15 +55,15 @@ export function Footer() {
             <p>&copy; {new Date().getFullYear()} Legado da Ponte de Pedra. Todos os direitos reservados.</p>
             <div className="flex items-center gap-2">
               <p>
-                Construído com{' '}
+                Feito com amor por{' '}
                 <a
-                  href="https://firebase.google.com/docs/studio"
+                  href="https://www.instagram.com/horyu.multimedia"
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium underline underline-offset-4"
                 >
-                  Firebase Studio
-                </a>.
+                  Horyu ♥
+                </a>
               </p>
               <div className="text-xs">
                 {loading 
