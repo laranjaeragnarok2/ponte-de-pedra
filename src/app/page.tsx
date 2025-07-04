@@ -22,8 +22,8 @@ export default function Home() {
         <Gallery />
         <Location />
         <Participate />
-        <InMemoriam />
         <Partners />
+        <InMemoriam />
       </main>
       <Footer />
     </div>
