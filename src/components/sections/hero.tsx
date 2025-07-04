@@ -5,8 +5,7 @@ export function Hero() {
     <section id="hero" className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-10"
-        style={{backgroundImage: "url('https://placehold.co/1920x1080.png')"}}
-        data-ai-hint="stone bridge nature"
+        style={{backgroundImage: "url('https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg')"}}
       ></div>
        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       <div className="container relative max-w-4xl mx-auto px-4">
