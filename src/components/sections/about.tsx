@@ -51,7 +51,7 @@ export function About() {
 
             <div className="grid gap-6 lg:grid-cols-2 items-center">
                 <Image
-                    src="https://placehold.co/600x450.png"
+                    src="https://gcdnb.pbrd.co/images/gDd85RjL9ePf.png?o=1"
                     data-ai-hint="vandalism nature"
                     alt="Pichações e lixo na área da Ponte de Pedra"
                     width={600}
