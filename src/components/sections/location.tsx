@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export function Location() {
@@ -18,14 +17,15 @@ export function Location() {
             </p>
           </div>
           <Card>
-            <CardContent className="p-0">
-               <Image
-                src="https://placehold.co/600x400.png"
-                alt="Mapa da localização da Ponte de Pedra na divisa de Rio Verde e Paraúna"
-                width={600}
-                height={400}
-                className="w-full rounded-lg shadow-lg aspect-[4/3] object-cover"
-                data-ai-hint="map river goias"
+            <CardContent className="p-0 overflow-hidden rounded-lg">
+               <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823910.310951962!2d-51.41977162099872!3d-17.053096217691586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9361058d4488ba2d%3A0x8a0c8a2f38d46b84!2sPonte%20de%20Pedra%20II!5e1!3m2!1spt-BR!2sbr!4v1751668031277!5m2!1spt-BR!2sbr"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full shadow-lg aspect-[4/3]"
+                title="Mapa da localização da Ponte de Pedra na divisa de Rio Verde e Paraúna"
               />
             </CardContent>
           </Card>
