@@ -8,9 +8,10 @@ import { Menu, Film } from 'lucide-react';
 const navLinks = [
   { href: '#sobre', label: 'Sobre a Causa' },
   { href: '#jornada', label: 'Nossa Jornada' },
-  { href: '#equipe', label: 'A Equipe' },
+  { href: '#equipe', label: 'Envolvidos' },
   { href: '#galeria', label: 'Galeria' },
   { href: '#localizacao', label: 'Localização' },
+  { href: '#parceiros', label: 'Apoiadores' },
 ];
 
 export function Header() {

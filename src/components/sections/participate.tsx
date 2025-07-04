@@ -1,15 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircleFillIcon } from "@/components/icons/check-circle-fill";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenSquare, Megaphone, Handshake } from "lucide-react";
-
-const partners = [
-  "Secretaria Municipal de Meio Ambiente de Rio Verde",
-  "Associação de Canoeiras do Rio Corrente",
-  "Museu Histórico de Jataí - Francisco Honório de Campos",
-  "Prefeitura de Paraúna",
-  "Comitê de Bacia Hidrográfica dos Bois",
-];
+import { PenSquare, Megaphone } from "lucide-react";
 
 const otherWaysToSupport = [
     "Compartilhe nosso curta-metragem nas suas redes sociais.",
@@ -20,7 +12,7 @@ const otherWaysToSupport = [
 
 export function Participate() {
   return (
-    <section id="participe" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section id="participe" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
           <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl md:text-5xl">
@@ -31,9 +23,9 @@ export function Participate() {
           </p>
         </div>
         
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-12 items-stretch">
+        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
           
-          <Card className="bg-background flex flex-col">
+          <Card className="bg-secondary/50 flex flex-col">
               <CardHeader className="items-center text-center">
                   <PenSquare className="w-10 h-10 text-primary mb-2" />
                   <CardTitle className="font-headline text-2xl">Sua Voz Faz a Diferença!</CardTitle>
@@ -50,7 +42,7 @@ export function Participate() {
               </CardContent>
           </Card>
 
-          <Card className="bg-background flex flex-col">
+          <Card className="bg-secondary/50 flex flex-col">
             <CardHeader className="items-center text-center">
               <Megaphone className="w-10 h-10 text-primary mb-2" />
               <CardTitle className="font-headline text-2xl">Outras Formas de Apoio</CardTitle>
@@ -67,26 +59,6 @@ export function Participate() {
             </CardContent>
           </Card>
           
-          <Card className="bg-background flex flex-col md:col-span-2 lg:col-span-1">
-            <CardHeader className="items-center text-center">
-              <Handshake className="w-10 h-10 text-primary mb-2" />
-              <CardTitle className="font-headline text-2xl">Nossos Parceiros</CardTitle>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col">
-              <ul className="space-y-4 flex-1">
-                {partners.map((partner) => (
-                  <li key={partner} className="flex items-center gap-3">
-                    <CheckCircleFillIcon className="w-6 h-6 text-primary fill-current" />
-                    <span className="font-medium text-foreground/80">{partner}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-sm text-muted-foreground text-center">
-                Agradecemos aos nossos parceiros que acreditam e apoiam a preservação do nosso patrimônio.
-              </p>
-            </CardContent>
-          </Card>
-
         </div>
       </div>
     </section>

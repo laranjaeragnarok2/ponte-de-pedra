@@ -7,6 +7,7 @@ import { Team } from "@/components/sections/team";
 import { Gallery } from "@/components/sections/gallery";
 import { Location } from "@/components/sections/location";
 import { Participate } from "@/components/sections/participate";
+import { Partners } from "@/components/sections/partners";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Gallery />
         <Location />
         <Participate />
+        <Partners />
       </main>
       <Footer />
     </div>
