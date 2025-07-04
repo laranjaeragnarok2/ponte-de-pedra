@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircleFillIcon } from "@/components/icons/check-circle-fill";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenSquare } from "lucide-react";
+import { PenSquare, Megaphone, Handshake } from "lucide-react";
 
 const partners = [
   "Secretaria Municipal de Meio Ambiente de Rio Verde",
@@ -10,6 +10,13 @@ const partners = [
   "Prefeitura de Paraúna",
   "Comitê de Bacia Hidrográfica dos Bois",
 ];
+
+const otherWaysToSupport = [
+    "Compartilhe nosso curta-metragem nas suas redes sociais.",
+    "Participe de eventos e debates sobre o patrimônio histórico.",
+    "Apoie instituições que trabalham pela preservação cultural.",
+    "Cobre ações do poder público para a manutenção da ponte.",
+]
 
 export function Participate() {
   return (
@@ -24,40 +31,49 @@ export function Participate() {
           </p>
         </div>
         
-        <div className="grid gap-16 lg:grid-cols-2 lg:gap-16 items-start">
-          <div className="space-y-8">
-            <Card className="bg-background">
-                <CardHeader className="items-center text-center">
-                    <PenSquare className="w-10 h-10 text-primary mb-2" />
-                    <CardTitle className="font-headline text-2xl">Sua Voz Faz a Diferença!</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center space-y-4">
-                    <p className="text-muted-foreground">
-                        Sua assinatura é uma voz poderosa na luta pela preservação da Ponte de Pedra. Junte-se a milhares de pessoas e ajude a proteger nosso patrimônio histórico e ambiental contra projetos que ameaçam sua existência.
-                    </p>
-                    <Button size="lg" asChild>
-                        <a href="https://www.change.org/p/salve-a-ponte-de-pedra-pch-prev%C3%AA-impacto-negativo-em-patrim%C3%B4nio-ambiental-e-arquiol%C3%B3gico?source_location=psf_petitions" target="_blank" rel="noopener noreferrer">
-                        Assine o Abaixo-Assinado
-                        </a>
-                    </Button>
-                </CardContent>
-            </Card>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-bold font-headline text-center">Outras Formas de Apoio:</h3>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground pl-4">
-                <li>Compartilhe nosso curta-metragem nas suas redes sociais.</li>
-                <li>Participe de eventos e debates sobre o patrimônio histórico.</li>
-                <li>Apoie instituições que trabalham pela preservação cultural.</li>
-                <li>Cobre ações do poder público para a manutenção da ponte.</li>
-              </ul>
-            </div>
-          </div>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-12 items-stretch">
           
-          <Card className="bg-background">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold font-headline mb-6">Agradecemos Nossos Parceiros e Apoiadores</h3>
-              <ul className="space-y-4">
+          <Card className="bg-background flex flex-col">
+              <CardHeader className="items-center text-center">
+                  <PenSquare className="w-10 h-10 text-primary mb-2" />
+                  <CardTitle className="font-headline text-2xl">Sua Voz Faz a Diferença!</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center space-y-4 flex flex-col flex-1">
+                  <p className="text-muted-foreground flex-1">
+                      Sua assinatura é uma voz poderosa na luta pela preservação da Ponte de Pedra. Junte-se a milhares de pessoas e ajude a proteger nosso patrimônio histórico e ambiental contra projetos que ameaçam sua existência.
+                  </p>
+                  <Button size="lg" asChild className="mt-auto">
+                      <a href="https://www.change.org/p/salve-a-ponte-de-pedra-pch-prev%C3%AA-impacto-negativo-em-patrim%C3%B4nio-ambiental-e-arquiol%C3%B3gico?source_location=psf_petitions" target="_blank" rel="noopener noreferrer">
+                      Assine o Abaixo-Assinado
+                      </a>
+                  </Button>
+              </CardContent>
+          </Card>
+
+          <Card className="bg-background flex flex-col">
+            <CardHeader className="items-center text-center">
+              <Megaphone className="w-10 h-10 text-primary mb-2" />
+              <CardTitle className="font-headline text-2xl">Outras Formas de Apoio</CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1">
+              <ul className="space-y-4 text-muted-foreground h-full">
+                {otherWaysToSupport.map((way) => (
+                  <li key={way} className="flex items-start gap-3">
+                    <CheckCircleFillIcon className="w-5 h-5 text-primary fill-current mt-1 shrink-0" />
+                    <span>{way}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-background flex flex-col md:col-span-2 lg:col-span-1">
+            <CardHeader className="items-center text-center">
+              <Handshake className="w-10 h-10 text-primary mb-2" />
+              <CardTitle className="font-headline text-2xl">Nossos Parceiros</CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-4 flex-1">
                 {partners.map((partner) => (
                   <li key={partner} className="flex items-center gap-3">
                     <CheckCircleFillIcon className="w-6 h-6 text-primary fill-current" />
@@ -65,11 +81,12 @@ export function Participate() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-muted-foreground">
+              <p className="mt-6 text-sm text-muted-foreground text-center">
                 Agradecemos aos nossos parceiros que acreditam e apoiam a preservação do nosso patrimônio.
               </p>
             </CardContent>
           </Card>
+
         </div>
       </div>
     </section>
