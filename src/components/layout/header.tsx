@@ -6,11 +6,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Film } from 'lucide-react';
 
 const navLinks = [
-  { href: '#sobre', label: 'Sobre a Causa' },
-  { href: '#jornada', label: 'Nossa Jornada' },
-  { href: '#equipe', label: 'Envolvidos' },
+  { href: '#sobre', label: 'A Causa' },
+  { href: '#jornada', label: 'Jornada' },
+  { href: '#equipe', label: 'Equipe' },
   { href: '#galeria', label: 'Galeria' },
-  { href: '#localizacao', label: 'Localização' },
+  { href: '#localizacao', label: 'Local' },
   { href: '#parceiros', label: 'Apoiadores' },
 ];
 
@@ -29,7 +29,7 @@ export function Header() {
           </a>
         </div>
         <nav className="hidden md:flex md:flex-1">
-          <ul className="flex items-center space-x-6 text-sm">
+          <ul className="flex items-center space-x-4 text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a

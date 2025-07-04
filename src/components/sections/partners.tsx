@@ -1,17 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users } from 'lucide-react';
+import { Users, Landmark, Waves, Sailboat, Palette, GraduationCap, Sprout } from 'lucide-react';
 
 const partners = [
-  "Prefeitura de Rio Verde",
-  "Prefeitura de Paraúna",
-  "Comitê de Bacia Hidrográfica dos Bois",
-  "Associação de Canoeiras do Rio Corrente",
-  "CONDEC - Conselho de Desenvolvimento Comunitário",
-  "Museu Histórico de Jataí",
-  "Secretaria de Cultura de Goiás",
-  "IPHAN",
-  "Universidade Federal de Goiás",
-  "Emater",
+  { name: "Prefeitura de Rio Verde", icon: <Landmark className="w-10 h-10 text-primary" /> },
+  { name: "Prefeitura de Paraúna", icon: <Landmark className="w-10 h-10 text-primary" /> },
+  { name: "Comitê de Bacia Hidrográfica dos Bois", icon: <Waves className="w-10 h-10 text-primary" /> },
+  { name: "Associação de Canoeiras do Rio Corrente", icon: <Sailboat className="w-10 h-10 text-primary" /> },
+  { name: "CONDEC - Conselho de Desenvolvimento Comunitário", icon: <Users className="w-10 h-10 text-primary" /> },
+  { name: "Museu Histórico de Jataí", icon: <Landmark className="w-10 h-10 text-primary" /> },
+  { name: "Secretaria de Cultura de Goiás", icon: <Palette className="w-10 h-10 text-primary" /> },
+  { name: "IPHAN", icon: <Landmark className="w-10 h-10 text-primary" /> },
+  { name: "Universidade Federal de Goiás", icon: <GraduationCap className="w-10 h-10 text-primary" /> },
+  { name: "Emater", icon: <Sprout className="w-10 h-10 text-primary" /> },
 ];
 
 export function Partners() {
@@ -30,8 +30,8 @@ export function Partners() {
             {partners.map((partner, index) => (
                 <Card key={index} className="h-full flex items-center justify-center bg-background/70">
                     <CardContent className="flex flex-col items-center justify-center text-center p-6 gap-4">
-                      <Users className="w-10 h-10 text-primary" />
-                      <span className="text-base font-medium">{partner}</span>
+                      {partner.icon}
+                      <span className="text-base font-medium">{partner.name}</span>
                     </CardContent>
                 </Card>
             ))}
