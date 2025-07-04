@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'cdn.pasteboard.co',
+        hostname: 'gcdnb.pbrd.co',
         port: '',
         pathname: '/**',
       }

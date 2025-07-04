@@ -33,7 +33,7 @@ export function About() {
             <div className="grid gap-6 lg:grid-cols-2 items-center">
                  <div className="lg:order-2">
                     <Image
-                        src="https://cdn.pasteboard.co/images/0vMC7AeaYqla.png"
+                        src="https://gcdnb.pbrd.co/images/0vMC7AeaYqla.png?o=1"
                         data-ai-hint="archeological artifact"
                         alt="Artefato arqueológico encontrado no local"
                         width={600}
