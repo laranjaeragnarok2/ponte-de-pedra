@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Film, PenTool, Search, Users } from "lucide-react";
+import { Film, PenTool, Search, Users, PlayCircle } from "lucide-react";
+import Image from "next/image";
 
 const journeySteps = [
   {
@@ -42,8 +43,19 @@ export function Journey() {
             </div>
             <div className="lg:col-span-2">
                 <h3 className="text-2xl font-bold font-headline mb-6 text-center lg:text-left">O Curta-Metragem</h3>
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Player de Vídeo Em Breve</p>
+                <div className="aspect-video rounded-lg flex items-center justify-center relative overflow-hidden group cursor-pointer bg-secondary shadow-xl">
+                    <Image
+                        src="https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg"
+                        alt="Thumbnail do curta-metragem"
+                        fill={true}
+                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="relative flex flex-col items-center justify-center text-primary-foreground z-10">
+                        <PlayCircle className="w-20 h-20 text-white/80 transition-all duration-300 group-hover:scale-110 group-hover:text-white" />
+                        <p className="mt-2 font-headline text-lg [text-shadow:_1px_1px_2px_rgb(0_0_0_/_50%)]">Assista ao Curta</p>
+                        <span className="text-sm [text-shadow:_1px_1px_2px_rgb(0_0_0_/_50%)]">(Em Breve)</span>
+                    </div>
                 </div>
             </div>
         </div>

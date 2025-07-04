@@ -3,13 +3,13 @@ import { PenSquare } from "lucide-react";
 
 export function Petition() {
   return (
-    <section id="abaixo-assinado" className="relative w-full py-12 md:py-24 lg:py-32 text-primary-foreground">
+    <section id="abaixo-assinado" className="relative w-full py-12 md:py-24 lg:py-32 text-primary-foreground overflow-hidden">
        <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-50"
+        className="absolute inset-0 bg-cover bg-center opacity-80 animate-kenburns"
         style={{backgroundImage: "url('https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg')"}}
       ></div>
-      <div className="absolute inset-0 bg-black/60"></div>
-      <div className="container relative px-4 md:px-6">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10"></div>
+      <div className="container relative px-4 md:px-6 z-10">
         <div className="flex flex-col items-center justify-center space-y-6 text-center">
           <div className="inline-block rounded-lg bg-primary/20 p-3 text-primary-foreground">
             <PenSquare className="h-8 w-8" />

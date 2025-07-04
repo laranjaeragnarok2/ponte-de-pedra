@@ -95,10 +95,15 @@ export default {
             height: '0',
           },
         },
+        kenburns: {
+          '0%': { transform: 'scale(1) translate(0, 0)' },
+          '100%': { transform: 'scale(1.1) translate(-2%, 2%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'kenburns': 'kenburns 20s ease-out forwards infinite alternate',
       },
     },
   },

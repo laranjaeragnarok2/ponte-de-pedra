@@ -15,13 +15,15 @@ export function About() {
         
         <div className="grid gap-12 lg:gap-16 items-center">
             <div className="grid gap-6 lg:grid-cols-2 items-center">
-                <Image
-                    src="https://www.parauna.go.gov.br/res/midias/img/3da24e5b95f6ac4f18877d086882e80c.jpg"
-                    alt="Formações rochosas da Ponte de Pedra"
-                    width={600}
-                    height={450}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
-                />
+                <div className="overflow-hidden rounded-xl shadow-lg group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                    <Image
+                        src="https://www.parauna.go.gov.br/res/midias/img/3da24e5b95f6ac4f18877d086882e80c.jpg"
+                        alt="Formações rochosas da Ponte de Pedra"
+                        width={600}
+                        height={450}
+                        className="mx-auto aspect-video object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    />
+                </div>
                 <div>
                     <h3 className="text-2xl font-bold font-headline">Formações Únicas e Espeleotemas Vivos</h3>
                     <p className="mt-2 text-muted-foreground">
@@ -32,14 +34,16 @@ export function About() {
 
             <div className="grid gap-6 lg:grid-cols-2 items-center">
                  <div className="lg:order-2">
-                    <Image
-                        src="https://gcdnb.pbrd.co/images/0vMC7AeaYqla.png?o=1"
-                        data-ai-hint="archeological artifact"
-                        alt="Artefato arqueológico encontrado no local"
-                        width={600}
-                        height={450}
-                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
-                    />
+                    <div className="overflow-hidden rounded-xl shadow-lg group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                        <Image
+                            src="https://gcdnb.pbrd.co/images/0vMC7AeaYqla.png?o=1"
+                            data-ai-hint="archeological artifact"
+                            alt="Artefato arqueológico encontrado no local"
+                            width={600}
+                            height={450}
+                            className="mx-auto aspect-video object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                        />
+                    </div>
                  </div>
                 <div className="lg:order-1">
                     <h3 className="text-2xl font-bold font-headline">Vestígios de Culturas Milenares</h3>
@@ -50,14 +54,16 @@ export function About() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2 items-center">
-                <Image
-                    src="https://gcdnb.pbrd.co/images/gDd85RjL9ePf.png?o=1"
-                    data-ai-hint="vandalism nature"
-                    alt="Pichações e lixo na área da Ponte de Pedra"
-                    width={600}
-                    height={450}
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
-                />
+                <div className="overflow-hidden rounded-xl shadow-lg group transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+                    <Image
+                        src="https://gcdnb.pbrd.co/images/gDd85RjL9ePf.png?o=1"
+                        data-ai-hint="vandalism nature"
+                        alt="Pichações e lixo na área da Ponte de Pedra"
+                        width={600}
+                        height={450}
+                        className="mx-auto aspect-video object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    />
+                </div>
                 <div>
                     <h3 className="text-2xl font-bold font-headline">Um Legado em Risco Constante</h3>
                     <p className="mt-2 text-muted-foreground">
