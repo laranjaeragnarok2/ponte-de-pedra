@@ -16,8 +16,7 @@ export function About() {
         <div className="grid gap-12 lg:gap-16 items-center">
             <div className="grid gap-6 lg:grid-cols-2 items-center">
                 <Image
-                    src="https://placehold.co/600x450.png"
-                    data-ai-hint="natural arch cave"
+                    src="https://www.parauna.go.gov.br/res/midias/img/3da24e5b95f6ac4f18877d086882e80c.jpg"
                     alt="Formações rochosas da Ponte de Pedra"
                     width={600}
                     height={450}
