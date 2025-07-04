@@ -1,11 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Users } from 'lucide-react';
 
 const partners = [
@@ -33,30 +26,16 @@ export function Partners() {
             Agradecemos aos nossos parceiros que acreditam e apoiam a preservação do nosso patrimônio.
           </p>
         </div>
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full max-w-5xl mx-auto"
-        >
-          <CarouselContent>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {partners.map((partner, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1 h-full">
-                  <Card className="h-full flex flex-col justify-center bg-background/70">
-                    <CardContent className="flex flex-col items-center justify-center aspect-video p-6 gap-4">
+                <Card key={index} className="h-full flex items-center justify-center bg-background/70">
+                    <CardContent className="flex flex-col items-center justify-center text-center p-6 gap-4">
                       <Users className="w-10 h-10 text-primary" />
-                      <span className="text-lg font-medium text-center">{partner}</span>
+                      <span className="text-base font-medium">{partner}</span>
                     </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
+                </Card>
             ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        </div>
       </div>
     </section>
   );
