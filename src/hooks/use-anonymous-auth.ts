@@ -9,6 +9,12 @@ export function useAnonymousAuth() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!auth) {
+      console.warn("Firebase not configured. Anonymous auth is disabled. Please provide valid Firebase credentials in your environment variables.");
+      setLoading(false);
+      return;
+    }
+
     const unsubscribe = auth.onAuthStateChanged(authUser => {
       if (authUser) {
         setUser(authUser);
@@ -20,7 +26,6 @@ export function useAnonymousAuth() {
             setLoading(false);
           })
           .catch(error => {
-            console.error("Anonymous sign-in error", error);
             setUser(null);
             setLoading(false);
           });

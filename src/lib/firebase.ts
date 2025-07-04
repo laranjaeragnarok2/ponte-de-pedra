@@ -1,5 +1,5 @@
-import { initializeApp, getApps, getApp } from "firebase/app";
-import { getAuth, signInAnonymously } from "firebase/auth";
+import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
+import { getAuth, signInAnonymously, type Auth } from "firebase/auth";
 
 // IMPORTANT: Replace with your actual Firebase configuration
 const firebaseConfig = {
@@ -11,7 +11,16 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || "your-app-id",
 };
 
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const auth = getAuth(app);
+let app: FirebaseApp | null;
+let auth: Auth | null;
+
+// Initialize Firebase only if the config is valid
+if (firebaseConfig.apiKey && firebaseConfig.apiKey !== 'your-api-key') {
+  app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+  auth = getAuth(app);
+} else {
+  app = null;
+  auth = null;
+}
 
 export { app, auth, signInAnonymously };

@@ -25,7 +25,11 @@ export function Footer() {
           </p>
         </div>
         <div className="text-xs text-muted-foreground">
-          {loading ? 'Autenticando...' : `ID de Sessão: ${user?.uid ? user.uid.substring(0, 8) : 'N/A'}`}
+          {loading 
+            ? 'Autenticando...' 
+            : user 
+              ? `ID de Sessão: ${user.uid.substring(0, 8)}` 
+              : 'Autenticação indisponível'}
         </div>
       </div>
     </footer>
