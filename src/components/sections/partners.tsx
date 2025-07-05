@@ -4,7 +4,6 @@ import { Users, Landmark, Waves, Sailboat, Palette, GraduationCap, Sprout } from
 const partners = [
   { name: "Prefeitura de Rio Verde", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Prefeitura de Paraúna", icon: <Landmark className="w-10 h-10 text-primary" /> },
-  { name: "Comitê de Bacia Hidrográfica dos Bois", icon: <Waves className="w-10 h-10 text-primary" /> },
   { name: "Associação de Canoeiras do Rio Corrente", icon: <Sailboat className="w-10 h-10 text-primary" /> },
   { name: "CONDEC - Conselho de Desenvolvimento Comunitário", icon: <Users className="w-10 h-10 text-primary" /> },
   { name: "Museu Histórico de Jataí", icon: <Landmark className="w-10 h-10 text-primary" /> },

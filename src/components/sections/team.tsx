@@ -23,7 +23,10 @@ export function Team() {
               <AccordionTrigger className="font-headline text-xl">Liderança e Execução da Ação</AccordionTrigger>
               <AccordionContent className="pt-4 text-muted-foreground space-y-3">
                 <p><strong>Jordana Vieira Goulart (Arqueóloga):</strong> Principal responsável técnica pelos estudos, pleito de tombamento e liderança do resgate arqueológico emergencial (2022-2024).</p>
-                <p><strong>Conselheiro do Comitê de Bacia:</strong> Iniciou a mobilização, articulou com a prefeitura e trouxe a Jordana para o projeto.</p>
+                <div>
+                  <p><strong>Klener Alves Rocha Júnior:</strong> Conselheiro em órgãos como CONDEC, CBH Rio dos Bois e CONSEG's, foi quem iniciou a mobilização, articulando com a prefeitura e trazendo a Jordana para o projeto.</p>
+                  <p className="pt-2 text-muted-foreground/90 text-sm"><em>Militar Fuzileiro Naval da Marinha do Brasil, Tecnologo em Gestão Pública pela UNOPAR e Pós Graduado em Segurança Pública e Investigação Criminal pela UNIRV.</em></p>
+                </div>
                 <p><strong>Guilherme Marques Martins (Geólogo):</strong> Membro da equipe multidisciplinar que realizou os estudos técnicos e o levantamento geológico.</p>
                 <p><strong>Fernando Santiago do Prado (Engenheiro Ambiental):</strong> Membro da equipe, responsável pelo mapeamento e geoprocessamento.</p>
               </AccordionContent>
