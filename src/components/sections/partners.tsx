@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Landmark, Waves, Sailboat, Palette, GraduationCap, Sprout } from 'lucide-react';
+import { Users, Landmark, Sailboat, Palette, GraduationCap, Sprout, Shield } from 'lucide-react';
 
 const partners = [
   { name: "Prefeitura de Rio Verde", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Prefeitura de Paraúna", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Associação de Canoeiras do Rio Corrente", icon: <Sailboat className="w-10 h-10 text-primary" /> },
   { name: "CONDEC - Conselho de Desenvolvimento Comunitário", icon: <Users className="w-10 h-10 text-primary" /> },
+  { name: "CONSEG - Conselho Comunitário de Segurança e Defesa Social", icon: <Shield className="w-10 h-10 text-primary" /> },
   { name: "Museu Histórico de Jataí", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Secretaria de Cultura de Goiás", icon: <Palette className="w-10 h-10 text-primary" /> },
   { name: "IPHAN", icon: <Landmark className="w-10 h-10 text-primary" /> },
