@@ -45,7 +45,7 @@ export function Journey() {
                 <h3 className="text-2xl font-bold font-headline mb-6 text-center lg:text-left">O Curta-Metragem</h3>
                 <div className="aspect-video rounded-lg flex items-center justify-center relative overflow-hidden group cursor-pointer bg-secondary shadow-xl">
                     <Image
-                        src="https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg"
+                        src="https://i.postimg.cc/xTgXxCwP/3da24e5f6ac4f18877d086882e80c.jpg"
                         alt="Thumbnail do curta-metragem"
                         fill={true}
                         className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
