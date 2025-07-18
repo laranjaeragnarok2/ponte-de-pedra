@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Landmark, Sailboat, Palette, GraduationCap, Sprout, Shield } from 'lucide-react';
+import { Users, Landmark, Sailboat, Palette, GraduationCap, Shield } from 'lucide-react';
 
 const partners = [
   { name: "Prefeitura de Rio Verde", icon: <Landmark className="w-10 h-10 text-primary" /> },
@@ -9,7 +9,6 @@ const partners = [
   { name: "CONSEG - Conselho Comunitário de Segurança e Defesa Social", icon: <Shield className="w-10 h-10 text-primary" /> },
   { name: "Secretaria de Cultura de Goiás", icon: <Palette className="w-10 h-10 text-primary" /> },
   { name: "Universidade Federal de Goiás", icon: <GraduationCap className="w-10 h-10 text-primary" /> },
-  { name: "Emater", icon: <Sprout className="w-10 h-10 text-primary" /> },
 ];
 
 export function Partners() {
@@ -24,7 +23,7 @@ export function Partners() {
             Agradecemos aos nossos parceiros que acreditam e apoiam a preservação do nosso patrimônio.
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch">
             {partners.map((partner, index) => (
                 <Card key={index} className="h-full flex items-center justify-center bg-background/70">
                     <CardContent className="flex flex-col items-center justify-center text-center p-6 gap-4">
