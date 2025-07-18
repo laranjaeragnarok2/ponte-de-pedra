@@ -23,7 +23,7 @@ export function Partners() {
             Agradecemos aos nossos parceiros que acreditam e apoiam a preservação do nosso patrimônio.
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto items-stretch">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto justify-center">
             {partners.map((partner, index) => (
                 <Card key={index} className="h-full flex items-center justify-center bg-background/70">
                     <CardContent className="flex flex-col items-center justify-center text-center p-6 gap-4">
