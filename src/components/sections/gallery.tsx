@@ -31,7 +31,7 @@ export function Gallery() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-12">
           {galleryImages.map((image, index) => (
-            <Card key={index} className="overflow-hidden group">
+            <Card key={index} className="overflow-hidden group transition-shadow duration-300 hover:shadow-lg">
               <CardContent className="p-0">
                 <Image
                   src={image.src}
@@ -51,7 +51,7 @@ export function Gallery() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
                 {documents.map((doc) => (
-                    <Card key={doc.title} className="bg-background">
+                    <Card key={doc.title} className="bg-background hover:-translate-y-1 transition-transform duration-300">
                         <CardContent className="p-6 flex flex-col items-center text-center">
                             <FileText className="w-10 h-10 text-primary mb-4" />
                             <h4 className="font-headline text-lg mb-2">{doc.title}</h4>

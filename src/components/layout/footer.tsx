@@ -1,7 +1,8 @@
 "use client";
 
 import { useAnonymousAuth } from '@/hooks/use-anonymous-auth';
-import { Film, Instagram, Youtube, Facebook } from 'lucide-react';
+import { Film, Instagram, Youtube, Facebook, Github, Link as LinkIcon } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const navLinks = [
   { href: '#sobre', label: 'A Causa' },
@@ -53,18 +54,43 @@ export function Footer() {
         <div className="mt-12 border-t pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>&copy; 2024 Legado da Ponte de Pedra. Todos os direitos reservados.</p>
-            <div className="flex items-center gap-2">
-              <p>
-                Feito com amor por{' '}
-                <a
-                  href="https://www.instagram.com/horyu.multimedia"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium underline underline-offset-4"
-                >
-                  Horyu ♥
-                </a>
-              </p>
+            <div className="flex items-center gap-4">
+              <span>Feito com amor por Horyu ♥</span>
+              <TooltipProvider>
+                <div className="flex items-center gap-3">
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <a href="https://www.instagram.com/horyu.multimedia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Horyu Multimedia" className="text-muted-foreground transition-colors hover:text-primary">
+                          <Instagram className="h-5 w-5" />
+                        </a>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Instagram</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <a href="https://github.com/laranjaeragnarok2" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Horyu Multimedia" className="text-muted-foreground transition-colors hover:text-primary">
+                          <Github className="h-5 w-5" />
+                        </a>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>GitHub</p>
+                      </TooltipContent>
+                    </Tooltip>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <a href="http://horyu-arthur.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Portfólio de Horyu Multimedia" className="text-muted-foreground transition-colors hover:text-primary">
+                          <LinkIcon className="h-5 w-5" />
+                        </a>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Portfólio</p>
+                      </TooltipContent>
+                    </Tooltip>
+                </div>
+              </TooltipProvider>
+
               <div className="text-xs">
                 {loading 
                   ? '...'
