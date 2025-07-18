@@ -37,10 +37,9 @@ export function Team() {
             <AccordionItem value="item-2">
               <AccordionTrigger className="font-headline text-xl">Parceiros Locais e Comunitários</AccordionTrigger>
               <AccordionContent className="pt-4 text-muted-foreground space-y-3">
-                <p><strong>Sr. Luiz "Catuaba":</strong> Morador antigo e guardião da memória local.</p>
-                <p><strong>Sr. Vanildo:</strong> Proprietário da fazenda (lado Paraúna), apoiador da preservação.</p>
-                <p><strong>Juliano (Restaurante "Recanto da Ponte de Pedra"):</strong> Empreendedor local que apoia o turismo consciente.</p>
-                <p><strong>Comunidade Local de Rio Verde e Paraúna:</strong> Pescadores, agricultores, assentados e turistas que frequentam e cuidam da área.</p>
+                <p><strong>Sr. Luiz "Catuaba":</strong> Morador antigo da região, trabalhou até aposentar nas fazendas do Paulo Reis e guardião da memória local.</p>
+                <p><strong>Sr. Vanildo João Pedrini:</strong> Proprietário da fazenda (lado Paraúna), apoiador da preservação da área.</p>
+                <p><strong>Juliano (Antigo proprietário do Restaurante "Recanto da Ponte de Pedra"):</strong> Empreendedor local que apoia o turismo consciente.</p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
