@@ -48,11 +48,11 @@ export function Team() {
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-headline text-xl">Apoio Institucional e Público</AccordionTrigger>
               <AccordionContent className="pt-4 text-muted-foreground space-y-3">
-                <p><strong>Prefeitura de Rio Verde:</strong> Apoio fundamental nos estudos técnicos e no decreto de tombamento municipal, incluindo o Prefeito Paulo Faria do Vale, a Secretária Marion Kompier e o Procurador Vinícius Fonseca Campos (gestão 2020).</p>
+                <p><strong>Prefeitura de Rio Verde:</strong> Apoio fundamental nos estudos técnicos e no Decreto de tombamento municipal, incluindo o Prefeito Paulo Faria do Vale, a Secretária Marion Kompier e o Procurador Vinícius Fonseca Campos (gestão 2020).</p>
                 <p><strong>Conselho Municipal de Meio Ambiente (COMMAM) de Rio Verde:</strong> Deliberou e aprovou o tombamento municipal.</p>
-                <p><strong>Prefeitura de Paraúna:</strong> Apoio na sinalização e organização do acesso às cavernas.</p>
+                <p><strong>Prefeitura de Paraúna:</strong> Apoio na sinalização, revitalização das estruturas e dos quiosques e implantação das passarelas que dão acesso às cavernas.</p>
                 <p><strong>Museu Histórico de Jataí - Francisco Honório de Campos:</strong> Instituição responsável pela guarda dos bens arqueológicos resgatados.</p>
-                <p><strong>Entidades de Estudos e Contexto:</strong> Agradecimentos à Rhama Consultoria, Biota, Preservar Arqueologia e Meio Ambiente, cujos relatórios técnicos foram essenciais para revelar as ameaças e direcionar as ações de resgate.</p>
+                <p><strong>Entidades de Estudos e Contexto:</strong> Agradecimentos à Universidade Federal de Goiás, Rhama Consultoria, Preservar Arqueologia e Meio Ambiente, cujos relatórios técnicos foram essenciais para revelar as ameaças e direcionar as ações.</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
