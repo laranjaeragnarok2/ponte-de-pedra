@@ -10,6 +10,7 @@ import { Participate } from "@/components/sections/participate";
 import { Partners } from "@/components/sections/partners";
 import { InMemoriam } from "@/components/sections/in-memoriam";
 import { Petition } from "@/components/sections/petition";
+import { DeveloperBio } from "@/components/sections/developer-bio";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Participate />
         <Partners />
         <InMemoriam />
+        <DeveloperBio />
       </main>
       <Footer />
     </div>
