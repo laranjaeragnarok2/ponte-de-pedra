@@ -7,9 +7,7 @@ const partners = [
   { name: "Associação de Canoeiras do Rio Corrente", icon: <Sailboat className="w-10 h-10 text-primary" /> },
   { name: "CONDEC - Conselho de Desenvolvimento Comunitário", icon: <Users className="w-10 h-10 text-primary" /> },
   { name: "CONSEG - Conselho Comunitário de Segurança e Defesa Social", icon: <Shield className="w-10 h-10 text-primary" /> },
-  { name: "Museu Histórico de Jataí", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Secretaria de Cultura de Goiás", icon: <Palette className="w-10 h-10 text-primary" /> },
-  { name: "IPHAN", icon: <Landmark className="w-10 h-10 text-primary" /> },
   { name: "Universidade Federal de Goiás", icon: <GraduationCap className="w-10 h-10 text-primary" /> },
   { name: "Emater", icon: <Sprout className="w-10 h-10 text-primary" /> },
 ];
