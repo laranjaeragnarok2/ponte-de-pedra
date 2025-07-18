@@ -14,7 +14,6 @@ const galleryImages = [
 
 const documents = [
     { title: "Decreto Municipal (2020)", href: "#" },
-    { title: "Relatório de Prospecção (Março/2022)", href: "#" },
     { title: "Abaixo-Assinado (Change.org)", href: "https://www.change.org/p/salve-a-ponte-de-pedra-pch-prev%C3%AA-impacto-negativo-em-patrim%C3%B4nio-ambiental-e-arquiol%C3%B3gico?source_location=psf_petitions" },
 ]
 
@@ -47,10 +46,10 @@ export function Gallery() {
         </div>
         <div className="mt-20">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <h3 className="text-2xl font-bold font-headline tracking-tighter sm:text-3xl">Documentos e Relatórios</h3>
+                <h3 className="text-2xl font-bold font-headline tracking-tighter sm:text-3xl">Decreto e Abaixo-Assinado</h3>
                 <p className="max-w-[900px] text-muted-foreground">Acesse os documentos que embasam nossa luta pela preservação.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
                 {documents.map((doc) => (
                     <Card key={doc.title} className="bg-background">
                         <CardContent className="p-6 flex flex-col items-center text-center">
