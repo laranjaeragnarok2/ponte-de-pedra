@@ -22,6 +22,7 @@ export function Petition() {
           </p>
           <Button size="lg" asChild>
             <a href="https://www.change.org/p/salve-a-ponte-de-pedra-pch-prev%C3%AA-impacto-negativo-em-patrim%C3%B4nio-ambiental-e-arquiol%C3%B3gico?source_location=psf_petitions" target="_blank" rel="noopener noreferrer">
+              <PenSquare className="mr-2 h-5 w-5" />
               Ir para o Abaixo-Assinado
             </a>
           </Button>

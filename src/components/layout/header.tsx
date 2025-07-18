@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Film } from 'lucide-react';
+import { Menu, Film, PenSquare } from 'lucide-react';
 
 const navLinks = [
   { href: '#sobre', label: 'A Causa' },
@@ -44,7 +44,10 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild>
-            <a href="#abaixo-assinado">Assine o Abaixo-Assinado</a>
+            <a href="#abaixo-assinado">
+              <PenSquare className="mr-2 h-4 w-4" />
+              Assine o Abaixo-Assinado
+            </a>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -72,7 +75,10 @@ export function Header() {
                   ))}
                 </nav>
                  <Button asChild onClick={() => setIsOpen(false)} className="mt-auto">
-                    <a href="#abaixo-assinado">Assine o Abaixo-Assinado</a>
+                    <a href="#abaixo-assinado">
+                      <PenSquare className="mr-2 h-4 w-4" />
+                      Assine o Abaixo-Assinado
+                    </a>
                   </Button>
               </div>
             </SheetContent>
