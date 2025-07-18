@@ -10,10 +10,10 @@ export function Location() {
               Onde o Legado Reside: A Ponte de Pedra
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              A Ponte de Pedra está localizada na divisa entre os municípios de Rio Verde e Paraúna, em Goiás, sobre o Rio Ponte de Pedra. Este local de rara beleza e rica história, embora ainda não seja Patrimônio Mundial, é um tesouro que lutamos para preservar.
+              A Ponte de Pedra está localizada na divisa entre os municípios de Rio Verde e Paraúna, em Goiás, logo abaixo do encontro do Rio Ponte de Pedra e o córrego Corrente. Este local de rara beleza e rica biodiversidade e história, embora ainda não seja Patrimônio Mundial, é um tesouro que lutamos para preservar.
             </p>
             <p className="text-muted-foreground">
-              <strong>Coordenadas:</strong> S 17°10'21.73" W 50°50'11.72" - Rio Verde/Paraúna, Goiás.
+              <strong>Coordenadas UTM:</strong> 22 K 517384/ 8101346.
             </p>
           </div>
           <Card>
