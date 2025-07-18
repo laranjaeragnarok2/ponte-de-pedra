@@ -30,12 +30,17 @@ export function Team() {
                   <p><strong>Klener Alves Rocha Júnior (ambientalista):</strong> Conselheiro em órgãos como CONDEC, CBH Rio dos Bois e CONSEG's, foi quem iniciou a mobilização, articulando com a prefeitura e trazendo a Jordana para o projeto.</p>
                   <p className="pt-2 text-muted-foreground/90 text-sm"><em>Militar Fuzileiro Naval da Marinha do Brasil, Tecnólogo em Gestão Pública pela UNOPAR e Pós Graduado em Segurança Pública e Investigação Criminal pela UNIRV.</em></p>
                 </div>
-                <div>
+                <p><strong>Guilherme Marques Martins (Geólogo):</strong> Membro da equipe multidisciplinar que realizou os estudos técnicos e o levantamento geológico.</p>
+                <p><strong>Fernando Santiago do Prado (Engenheiro Ambiental):</strong> Membro da equipe multidisciplinar, responsável pelo mapeamento e geoprocessamento.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="font-headline text-xl">Direção de Arte e Desenvolvimento Web</AccordionTrigger>
+              <AccordionContent className="pt-4 text-muted-foreground space-y-4">
+                 <div>
                   <p><strong>Arthur "Horyu" André (Desenvolvedor e Diretor de Arte):</strong> Principal responsável pela concepção digital e audiovisual do projeto.</p>
                   <p className="pt-2 text-muted-foreground/90 text-sm"><em>Desenvolvedor com expertise em tecnologias como Next.js e TypeScript, foi o responsável técnico pela criação da landing page "Legado da Ponte de Pedra". Como Diretor de Arte e Produtor Audiovisual, liderou a direção de fotografia e a edição do curta-metragem. Possui certificação em Análise de Marketing pelo Google e formação em Direção Cinematográfica, unindo a execução técnica com a visão estratégica e criativa para dar vida à causa da preservação.</em></p>
                 </div>
-                <p><strong>Guilherme Marques Martins (Geólogo):</strong> Membro da equipe multidisciplinar que realizou os estudos técnicos e o levantamento geológico.</p>
-                <p><strong>Fernando Santiago do Prado (Engenheiro Ambiental):</strong> Membro da equipe multidisciplinar, responsável pelo mapeamento e geoprocessamento.</p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
