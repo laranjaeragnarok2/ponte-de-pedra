@@ -21,14 +21,17 @@ export function Team() {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-headline text-xl">Liderança e Execução da Ação</AccordionTrigger>
-              <AccordionContent className="pt-4 text-muted-foreground space-y-3">
-                <p><strong>Jordana Vieira Goulart (Arqueóloga):</strong> Principal responsável técnica pelos estudos, pleito de tombamento e liderança do resgate arqueológico emergencial (2022-2024).</p>
+              <AccordionContent className="pt-4 text-muted-foreground space-y-4">
                 <div>
-                  <p><strong>Klener Alves Rocha Júnior:</strong> Conselheiro em órgãos como CONDEC, CBH Rio dos Bois e CONSEG's, foi quem iniciou a mobilização, articulando com a prefeitura e trazendo a Jordana para o projeto.</p>
-                  <p className="pt-2 text-muted-foreground/90 text-sm"><em>Militar Fuzileiro Naval da Marinha do Brasil, Tecnologo em Gestão Pública pela UNOPAR e Pós Graduado em Segurança Pública e Investigação Criminal pela UNIRV.</em></p>
+                  <p><strong>Jordana Vieira Goulart (Arqueóloga):</strong> Principal responsável técnica pelos estudos arqueológicos, pleito de tombamento (2020-até o momento).</p>
+                  <p className="pt-2 text-muted-foreground/90 text-sm"><em>Arqueóloga pela PUC-GO (2011); Graduação em Administração com Habilitação em Marketing pelo Instituto de Ensino Superior de Rio Verde (2005); Pós Graduação em Curadoria, Museologia e Gestão de Exposições (2023) pela Estácio de Ribeirão Preto. Atua na área de Licenciamento ambiental desde 2011.</em></p>
+                </div>
+                <div>
+                  <p><strong>Klener Alves Rocha Júnior (ambientalista):</strong> Conselheiro em órgãos como CONDEC, CBH Rio dos Bois e CONSEG's, foi quem iniciou a mobilização, articulando com a prefeitura e trazendo a Jordana para o projeto.</p>
+                  <p className="pt-2 text-muted-foreground/90 text-sm"><em>Militar Fuzileiro Naval da Marinha do Brasil, Tecnólogo em Gestão Pública pela UNOPAR e Pós Graduado em Segurança Pública e Investigação Criminal pela UNIRV.</em></p>
                 </div>
                 <p><strong>Guilherme Marques Martins (Geólogo):</strong> Membro da equipe multidisciplinar que realizou os estudos técnicos e o levantamento geológico.</p>
-                <p><strong>Fernando Santiago do Prado (Engenheiro Ambiental):</strong> Membro da equipe, responsável pelo mapeamento e geoprocessamento.</p>
+                <p><strong>Fernando Santiago do Prado (Engenheiro Ambiental):</strong> Membro da equipe multidisciplinar, responsável pelo mapeamento e geoprocessamento.</p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
