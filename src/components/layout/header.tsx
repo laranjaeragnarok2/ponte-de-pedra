@@ -44,7 +44,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild>
-            <a href="#participe">Participe</a>
+            <a href="#abaixo-assinado">Assine o Abaixo-Assinado</a>
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -72,7 +72,7 @@ export function Header() {
                   ))}
                 </nav>
                  <Button asChild onClick={() => setIsOpen(false)} className="mt-auto">
-                    <a href="#participe">Participe</a>
+                    <a href="#abaixo-assinado">Assine o Abaixo-Assinado</a>
                   </Button>
               </div>
             </SheetContent>

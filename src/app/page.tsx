@@ -9,6 +9,7 @@ import { Location } from "@/components/sections/location";
 import { Participate } from "@/components/sections/participate";
 import { Partners } from "@/components/sections/partners";
 import { InMemoriam } from "@/components/sections/in-memoriam";
+import { Petition } from "@/components/sections/petition";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Journey />
         <Team />
         <Gallery />
+        <Petition />
         <Location />
         <Participate />
         <Partners />
