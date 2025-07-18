@@ -40,6 +40,9 @@ export function Team() {
                 <p><strong>Sr. Luiz "Catuaba":</strong> Morador antigo da região, trabalhou até aposentar nas fazendas do Paulo Reis e guardião da memória local.</p>
                 <p><strong>Sr. Vanildo João Pedrini:</strong> Proprietário da fazenda (lado Paraúna), apoiador da preservação da área.</p>
                 <p><strong>Juliano (Antigo proprietário do Restaurante "Recanto da Ponte de Pedra"):</strong> Empreendedor local que apoia o turismo consciente.</p>
+                <p><strong>Audirley Silva Cabral – Atual responsável pelo Restaurante "Recanto da Ponte de Pedra"):</strong> Empreendedor local que apoia o turismo consciente.</p>
+                <p><strong>Povoado Ponte de Pedra:</strong> Pequenos agricultores que vivem em assentamentos da reforma agrária nas margens do rio Ponte de Pedra e Córrego Corrente.</p>
+                <p><strong>Comunidade Local de Rio Verde e Paraúna:</strong> Pescadores, agricultores, assentados e turistas que freqüentam e cuidam da área.</p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
