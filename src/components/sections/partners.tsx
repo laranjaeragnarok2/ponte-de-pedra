@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Landmark, Sailboat, Palette, GraduationCap, Shield } from 'lucide-react';
+import { Users, Landmark, Sailboat, Palette, GraduationCap, Shield, HandHeart } from 'lucide-react';
 
 const partners = [
   { name: "Prefeitura de Rio Verde", icon: <Landmark className="w-10 h-10 text-primary" /> },
@@ -10,6 +10,8 @@ const partners = [
   { name: "Secretaria de Cultura de Goiás", icon: <Palette className="w-10 h-10 text-primary" /> },
   { name: "Universidade Federal de Goiás", icon: <GraduationCap className="w-10 h-10 text-primary" /> },
 ];
+
+const whatsappLink = `https://wa.me/556281471728?text=${encodeURIComponent("Olá! Gostaria de saber como posso apoiar o projeto Legado da Ponte de Pedra.")}`;
 
 export function Partners() {
   return (
@@ -32,6 +34,14 @@ export function Partners() {
                     </CardContent>
                 </Card>
             ))}
+             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="no-underline">
+                <Card className="h-full flex items-center justify-center bg-primary/10 hover:bg-primary/20 border-primary/30 transition-all duration-300 ease-in-out">
+                    <CardContent className="flex flex-col items-center justify-center text-center p-6 gap-4">
+                      <HandHeart className="w-10 h-10 text-primary" />
+                      <span className="text-base font-medium text-primary">Quero ser um apoiador</span>
+                    </CardContent>
+                </Card>
+            </a>
         </div>
       </div>
     </section>
