@@ -5,8 +5,8 @@ export function Petition() {
   return (
     <section id="abaixo-assinado" className="relative w-full py-12 md:py-24 lg:py-32 text-primary-foreground overflow-hidden">
        <div 
-        className="absolute inset-0 bg-cover bg-center opacity-80 animate-kenburns"
-        style={{backgroundImage: "url('https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg')"}}
+        className="absolute inset-0 bg-cover bg-center"
+        style={{backgroundImage: "url('https://wallpapers.com/images/high/help-pictures-a1f66lgvc2hcgphb.webp')"}}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10"></div>
       <div className="container relative px-4 md:px-6 z-10">
