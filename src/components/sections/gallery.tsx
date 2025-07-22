@@ -13,7 +13,7 @@ const galleryImages = [
 ];
 
 const documents = [
-    { title: "Decreto Municipal (2020)", href: "#" },
+    { title: "Decreto Municipal (2020)", href: "https://drive.google.com/file/d/1AKQQTK6ZY-5TTFmgc2wTt4LhOpb2Kh7r/view?usp=drivesdk" },
     { title: "Abaixo-Assinado (Change.org)", href: "https://www.change.org/p/salve-a-ponte-de-pedra-pch-prev%C3%AA-impacto-negativo-em-patrim%C3%B4nio-ambiental-e-arquiol%C3%B3gico?source_location=psf_petitions" },
 ]
 
