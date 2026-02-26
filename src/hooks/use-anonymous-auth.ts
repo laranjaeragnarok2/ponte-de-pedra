@@ -1,38 +1,54 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import type { User } from 'firebase/auth';
-import { auth, signInAnonymously } from '@/lib/firebase';
+
+interface SimpleUser {
+  uid: string;
+}
 
 export function useAnonymousAuth() {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<SimpleUser | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!auth) {
-      console.warn("Firebase not configured. Anonymous auth is disabled. Please provide valid Firebase credentials in your environment variables.");
-      setLoading(false);
-      return;
-    }
+    let unsubscribe: (() => void) | undefined;
 
-    const unsubscribe = auth.onAuthStateChanged(authUser => {
-      if (authUser) {
-        setUser(authUser);
+    const initAuth = async () => {
+      try {
+        const { getFirebaseAuth } = await import('@/lib/firebase');
+        const { auth, signInAnonymously } = await getFirebaseAuth();
+
+        if (!auth) {
+          setLoading(false);
+          return;
+        }
+
+        unsubscribe = auth.onAuthStateChanged((authUser: any) => {
+          if (authUser) {
+            setUser({ uid: authUser.uid });
+            setLoading(false);
+          } else {
+            signInAnonymously(auth)
+              .then((userCredential: any) => {
+                setUser({ uid: userCredential.user.uid });
+                setLoading(false);
+              })
+              .catch(() => {
+                setUser(null);
+                setLoading(false);
+              });
+          }
+        });
+      } catch {
         setLoading(false);
-      } else {
-        signInAnonymously(auth)
-          .then((userCredential) => {
-            setUser(userCredential.user);
-            setLoading(false);
-          })
-          .catch(error => {
-            setUser(null);
-            setLoading(false);
-          });
       }
-    });
+    };
 
-    return () => unsubscribe();
+    initAuth();
+
+    return () => {
+      if (unsubscribe) unsubscribe();
+    };
   }, []);
 
   return { user, loading };

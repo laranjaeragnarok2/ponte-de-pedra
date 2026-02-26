@@ -1,4 +1,4 @@
-import type {Config} from 'tailwindcss';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['class'],
@@ -99,11 +99,16 @@ export default {
           '0%': { transform: 'scale(1) translate(0, 0)' },
           '100%': { transform: 'scale(1.1) translate(-2%, 2%)' },
         },
+        fadeInUp: {
+          from: { opacity: '0', transform: 'translateY(20px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'kenburns': 'kenburns 20s ease-out forwards infinite alternate',
+        'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
       },
     },
   },
