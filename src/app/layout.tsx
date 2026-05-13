@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'Horyu Multimedia', url: 'https://www.instagram.com/horyu.multimedia' }],
   creator: 'Horyu Multimedia',
   metadataBase: new URL('https://ponte-de-pedra.vercel.app'),
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     title: "Ponte de Pedra | Um Legado a Preservar",
     description: "Um curta-metragem sobre a história e a necessidade urgente de preservação da icônica Ponte de Pedra em Goiás. Apoie esta causa.",
