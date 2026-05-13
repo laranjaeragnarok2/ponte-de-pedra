@@ -44,7 +44,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a 
-                  href="https://recanto-ponte-de-pedra.vercel.app" 
+                  href="https://pontedepedra.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-muted-foreground transition-colors hover:text-primary flex items-center gap-2 group"

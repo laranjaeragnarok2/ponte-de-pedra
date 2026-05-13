@@ -5,7 +5,7 @@ const links = [
   {
     title: "Recanto Ponte de Pedra",
     description: "Conheça o local onde a natureza e o lazer se encontram. Hospedagem, camping e uma experiência completa.",
-    url: "https://recanto-ponte-de-pedra.vercel.app",
+    url: "https://pontedepedra.vercel.app/",
     icon: Globe,
     label: "Visitar Site"
   },
