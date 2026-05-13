@@ -1,6 +1,6 @@
 "use client";
 
-import { Film, Instagram, Youtube, Facebook, Github, Link as LinkIcon } from 'lucide-react';
+import { Film, Instagram, Youtube, Facebook, Github, Globe, Link as LinkIcon } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const navLinks = [
@@ -36,6 +36,23 @@ export function Footer() {
                   <a href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">{link.label}</a>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold font-headline text-lg">Explorar</h4>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <a 
+                  href="https://recanto-ponte-de-pedra.vercel.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-muted-foreground transition-colors hover:text-primary flex items-center gap-2 group"
+                >
+                  <Globe className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                  Recanto Ponte de Pedra
+                </a>
+              </li>
             </ul>
           </div>
 

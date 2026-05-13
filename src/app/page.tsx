@@ -10,6 +10,7 @@ import { Participate } from "@/components/sections/participate";
 import { Partners } from "@/components/sections/partners";
 import { InMemoriam } from "@/components/sections/in-memoriam";
 import { Petition } from "@/components/sections/petition";
+import { ExternalLinks } from "@/components/sections/external-links";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Gallery />
         <Petition />
         <Location />
+        <ExternalLinks />
         <Participate />
         <Partners />
         <InMemoriam />
