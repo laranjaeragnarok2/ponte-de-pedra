@@ -4,23 +4,23 @@ import './globals.css';
 import { DisableRightClick } from '@/components/util/disable-right-click';
 
 export const metadata: Metadata = {
-  title: "Legado da Ponte de Pedra | Um Curta Pela Preservação",
+  title: "Ponte de Pedra | Um Legado a Preservar",
   description: "Junte-se à causa pela preservação da Ponte de Pedra (GO). Assista ao curta-metragem e apoie a proteção deste patrimônio geológico, arqueológico e cultural.",
   keywords: ['Ponte de Pedra', 'Goiás', 'preservação', 'patrimônio cultural', 'arqueologia', 'curta-metragem', 'Rio Verde', 'Paraúna', 'meio ambiente', 'tombamento', 'Horyu'],
   authors: [{ name: 'Horyu Multimedia', url: 'https://www.instagram.com/horyu.multimedia' }],
   creator: 'Horyu Multimedia',
   metadataBase: new URL('https://ponte-de-pedra.vercel.app'),
   openGraph: {
-    title: "Legado da Ponte de Pedra: Um Legado a Preservar",
+    title: "Ponte de Pedra | Um Legado a Preservar",
     description: "Um curta-metragem sobre a história e a necessidade urgente de preservação da icônica Ponte de Pedra em Goiás. Apoie esta causa.",
     url: 'https://ponte-de-pedra.vercel.app',
-    siteName: 'Legado da Ponte de Pedra',
+    siteName: 'Ponte de Pedra',
     images: [
       {
-        url: 'https://i.postimg.cc/xTgXxCwP/3da24e5f6ac4f18877d086882e80c.jpg',
-        width: 1280,
-        height: 720,
-        alt: 'Vista panorâmica da Ponte de Pedra em Goiás',
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Ponte de Pedra - Um Legado a Preservar',
       },
     ],
     locale: 'pt_BR',
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Legado da Ponte de Pedra: Um Legado a Preservar',
+    title: 'Ponte de Pedra | Um Legado a Preservar',
     description: 'Um curta-metragem sobre a história e a necessidade urgente de preservação da icônica Ponte de Pedra em Goiás. Apoie esta causa.',
-    images: ['https://i.postimg.cc/xTgXxCwP/3da24e5f6ac4f18877d086882e80c.jpg'],
+    images: ['/og-image.png'],
   },
 };
 
