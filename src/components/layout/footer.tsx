@@ -40,8 +40,19 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h4 className="font-semibold font-headline text-lg">Explorar</h4>
+            <h4 className="font-semibold font-headline text-lg">Projetos & Links</h4>
             <ul className="space-y-2.5 text-sm">
+              <li>
+                <a 
+                  href="https://github.com/laranjaeragnarok2/Recanto" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-muted-foreground transition-colors hover:text-primary flex items-center gap-2 group"
+                >
+                  <Github className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                  Projeto Recanto (GitHub)
+                </a>
+              </li>
               <li>
                 <a 
                   href="https://pontedepedra.vercel.app/" 
@@ -50,7 +61,7 @@ export function Footer() {
                   className="text-muted-foreground transition-colors hover:text-primary flex items-center gap-2 group"
                 >
                   <Globe className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                  Recanto Ponte de Pedra
+                  Portal Recanto
                 </a>
               </li>
             </ul>

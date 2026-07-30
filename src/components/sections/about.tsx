@@ -1,29 +1,32 @@
-import Image from "next/image";
+import { Mountain, Archeology, ShieldAlert, Sparkles } from "lucide-react";
 
 const facets = [
   {
-    image: "https://www.parauna.go.gov.br/res/midias/img/3da24e5b95f6ac4f18877d086882e80c.jpg",
-    alt: "Formações rochosas da Ponte de Pedra",
+    icon: Mountain,
+    badge: "Geologia & Cárstico",
     title: "Formações Únicas e Espeleotemas Vivos",
     description:
       "A área abriga as impressionantes Ponte de Pedra I, um arco natural esculpido pelo tempo sobre o Rio Corrente, e a Ponte de Pedra II, uma caverna com espeleotemas ativos, como estalactites e estalagmites. Sua raridade no sudoeste goiano, com processos cársticos em andamento, confere-lhe um valor geológico inestimável e beleza cênica singular.",
     reverse: false,
+    color: "from-emerald-950/20 via-slate-900/30 to-emerald-900/10 border-emerald-500/30 text-emerald-400",
   },
   {
-    image: "/images/archaeological-artifacts.png",
-    alt: "Artefato arqueológico encontrado no local",
+    icon: Archeology,
+    badge: "Arqueologia (Sítio IPHAN GO00381)",
     title: "Vestígios de Culturas Milenares",
     description:
       "Além de sua grandiosidade natural, a Ponte de Pedra é um sítio arqueológico (GO00381), cadastrado no Iphan desde 1975. Pesquisas revelaram a presença de lascas e artefatos líticos, evidenciando o uso e a ocupação por povos pré-coloniais. O local é um elo direto com a memória e a identidade dos diferentes povos que formaram a sociedade brasileira.",
     reverse: true,
+    color: "from-amber-950/20 via-slate-900/30 to-amber-900/10 border-amber-500/30 text-amber-400",
   },
   {
-    image: "/images/vandalism-damage.png",
-    alt: "Pichações e lixo na área da Ponte de Pedra",
+    icon: ShieldAlert,
+    badge: "Alerta de Preservação",
     title: "Um Legado em Risco Constante",
     description:
-      "Infelizmente, essa joia multifacetada está sob constante ameaça. O vandalismo, com pichações e descarte inadequado de lixo, degrada o ambiente. A maior ameaça, no entanto, é a proposta de instalação da PCH Ponte de Pedra 2, que, conforme relatório de março de 2022, impactaria severamente a biodiversidade e o regime hídrico, além de submergir múltiplos sítios arqueológicos recém-identificados, representando uma perda irreparável para a história e a cultura.",
+      "Infelizmente, essa joia multifacetada está sob constante ameaça. O vandalismo, com pichações e descarte inadequado de lixo, degrada o ambiente. A maior ameaça, no entanto, é a proposta de instalação da PCH Ponte de Pedra 2, que, conforme relatório de março de 2022, impactaria severamente a biodiversidade e o regime hídrico, além de submergir múltiplos sítios arqueológicos recém-identificados.",
     reverse: false,
+    color: "from-rose-950/20 via-slate-900/30 to-rose-900/10 border-rose-500/30 text-rose-400",
   },
 ];
 
@@ -48,40 +51,48 @@ export function About() {
         </div>
 
         {/* Content Grid */}
-        <div className="space-y-20 md:space-y-28">
-          {facets.map((facet, index) => (
-            <div
-              key={index}
-              className={`grid gap-8 md:gap-12 lg:grid-cols-2 items-center ${
-                facet.reverse ? "lg:grid-flow-dense" : ""
-              }`}
-            >
+        <div className="space-y-16 md:space-y-24">
+          {facets.map((facet, index) => {
+            const IconComponent = facet.icon;
+            return (
               <div
-                className={`overflow-hidden rounded-2xl shadow-lg group transition-all duration-300 ease-in-out hover:shadow-2xl ${
-                  facet.reverse ? "lg:col-start-2" : ""
+                key={index}
+                className={`grid gap-8 md:gap-12 lg:grid-cols-12 items-center ${
+                  facet.reverse ? "lg:grid-flow-dense" : ""
                 }`}
               >
-                <Image
-                  src={facet.image}
-                  alt={facet.alt}
-                  width={640}
-                  height={420}
-                  className="w-full aspect-[3/2] object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                />
+                <div
+                  className={`lg:col-span-5 ${
+                    facet.reverse ? "lg:col-start-8" : ""
+                  }`}
+                >
+                  <div className={`p-8 md:p-10 rounded-3xl bg-gradient-to-br ${facet.color} border shadow-lg flex flex-col items-center justify-center text-center space-y-4`}>
+                    <div className="w-16 h-16 rounded-2xl bg-background/80 backdrop-blur-md flex items-center justify-center shadow-md">
+                      <IconComponent className="w-8 h-8" />
+                    </div>
+                    <span className="text-xs font-semibold uppercase tracking-widest opacity-90">
+                      {facet.badge}
+                    </span>
+                    <div className="text-xs font-mono text-muted-foreground">
+                      Patrimônio Geológico e Cultural
+                    </div>
+                  </div>
+                </div>
+
+                <div className={`lg:col-span-7 ${facet.reverse ? "lg:col-start-1" : ""}`}>
+                  <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">
+                    {String(index + 1).padStart(2, "0")} / {String(facets.length).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold font-headline leading-tight">
+                    {facet.title}
+                  </h3>
+                  <p className="mt-4 text-muted-foreground text-base leading-relaxed prose-readable">
+                    {facet.description}
+                  </p>
+                </div>
               </div>
-              <div className={facet.reverse ? "lg:col-start-1" : ""}>
-                <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary/70 mb-2">
-                  {String(index + 1).padStart(2, "0")} / {String(facets.length).padStart(2, "0")}
-                </span>
-                <h3 className="text-2xl md:text-3xl font-bold font-headline leading-tight">
-                  {facet.title}
-                </h3>
-                <p className="mt-4 text-muted-foreground text-base leading-relaxed prose-readable">
-                  {facet.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
