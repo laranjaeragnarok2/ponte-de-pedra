@@ -45,8 +45,8 @@ export function Journey() {
           <h3 className="text-xl font-bold font-headline mb-4 text-center text-muted-foreground">O Curta-Metragem</h3>
           <div className="aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden group cursor-pointer shadow-2xl">
             <Image
-              src="https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg"
-              alt="Thumbnail do curta-metragem"
+              src="https://www.pontedepedra.tur.br/gruta.png"
+              alt="Thumbnail do curta-metragem - Gruta da Ponte de Pedra"
               fill={true}
               className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
             />

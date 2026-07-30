@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 import { FileText, ExternalLink } from "lucide-react";
 
 const galleryImages = [
-  { src: "https://i.postimg.cc/Y0HvVm2d/015920127f3e3555ed2c0d71f620363e.jpg", alt: "Vista da Ponte de Pedra" },
-  { src: "https://i.postimg.cc/WbsDwrH3/49f29e143ce544d4e038a90a8fc4b336.jpg", alt: "Detalhe dos arcos da ponte" },
-  { src: "https://i.postimg.cc/dQ2kCnnp/72f24337a6e4b553a8f96907b49ea072.jpg", alt: "Rio correndo sob a ponte" },
-  { src: "https://i.postimg.cc/wBnyXGC8/9d010bd80656c2cae903908f7c22693c.jpg", alt: "Ponte de Pedra e vegetação" },
-  { src: "https://i.postimg.cc/SNGMBVMC/eccb837a0c89f08bf9e9bc061ae3a9bf.jpg", alt: "Ponte de Pedra em preto e branco" },
-  { src: "https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg", alt: "Vista aérea da ponte" },
+  { src: "https://www.pontedepedra.tur.br/galeria/hero-bg.jpeg", alt: "Ponte de Pedra e vegetação nativa do Cerrado" },
+  { src: "https://www.pontedepedra.tur.br/gruta.png", alt: "Entrada da Gruta e Arcos de Pedra" },
+  { src: "https://www.pontedepedra.tur.br/ponte-de-pedra-parauna-galery-9-807.jpg", alt: "Formação geológica milenar da Ponte de Pedra" },
+  { src: "https://www.pontedepedra.tur.br/galeria/lago-natural.webp", alt: "Lago Natural e Rio Corrente" },
+  { src: "https://www.pontedepedra.tur.br/camping.png", alt: "Área de Preservação e Camping" },
+  { src: "https://www.pontedepedra.tur.br/galeria/hero-bg.jpeg", alt: "Vista panorâmica do monumento natural" },
 ];
 
 const documents = [

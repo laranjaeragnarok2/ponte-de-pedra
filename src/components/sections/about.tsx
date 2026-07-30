@@ -2,24 +2,24 @@ import Image from "next/image";
 
 const facets = [
   {
-    image: "https://www.parauna.go.gov.br/res/midias/img/3da24e5b95f6ac4f18877d086882e80c.jpg",
-    alt: "Formações rochosas da Ponte de Pedra",
+    image: "https://www.pontedepedra.tur.br/gruta.png",
+    alt: "Formações rochosas e caverna da Ponte de Pedra",
     title: "Formações Únicas e Espeleotemas Vivos",
     description:
       "A área abriga as impressionantes Ponte de Pedra I, um arco natural esculpido pelo tempo sobre o Rio Corrente, e a Ponte de Pedra II, uma caverna com espeleotemas ativos, como estalactites e estalagmites. Sua raridade no sudoeste goiano, com processos cársticos em andamento, confere-lhe um valor geológico inestimável e beleza cênica singular.",
     reverse: false,
   },
   {
-    image: "/images/archaeological-artifacts.png",
-    alt: "Artefato arqueológico encontrado no local",
+    image: "https://www.pontedepedra.tur.br/ponte-de-pedra-parauna-galery-9-807.jpg",
+    alt: "Vista do monumento natural Ponte de Pedra",
     title: "Vestígios de Culturas Milenares",
     description:
       "Além de sua grandiosidade natural, a Ponte de Pedra é um sítio arqueológico (GO00381), cadastrado no Iphan desde 1975. Pesquisas revelaram a presença de lascas e artefatos líticos, evidenciando o uso e a ocupação por povos pré-coloniais. O local é um elo direto com a memória e a identidade dos diferentes povos que formaram a sociedade brasileira.",
     reverse: true,
   },
   {
-    image: "/images/vandalism-damage.png",
-    alt: "Pichações e lixo na área da Ponte de Pedra",
+    image: "https://www.pontedepedra.tur.br/galeria/lago-natural.webp",
+    alt: "Rio e lago natural na região da Ponte de Pedra",
     title: "Um Legado em Risco Constante",
     description:
       "Infelizmente, essa joia multifacetada está sob constante ameaça. O vandalismo, com pichações e descarte inadequado de lixo, degrada o ambiente. A maior ameaça, no entanto, é a proposta de instalação da PCH Ponte de Pedra 2, que, conforme relatório de março de 2022, impactaria severamente a biodiversidade e o regime hídrico, além de submergir múltiplos sítios arqueológicos recém-identificados, representando uma perda irreparável para a história e a cultura.",

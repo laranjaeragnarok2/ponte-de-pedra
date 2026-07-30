@@ -6,7 +6,7 @@ export function Hero() {
     <section id="hero" className="relative w-full h-dvh min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center animate-kenburns"
-        style={{ backgroundImage: "url('https://i.postimg.cc/xTgXxCwP/3da24e5f6ac4f18877d086882e80c.jpg')" }}
+        style={{ backgroundImage: "url('https://www.pontedepedra.tur.br/galeria/hero-bg.jpeg')" }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20"></div>
 

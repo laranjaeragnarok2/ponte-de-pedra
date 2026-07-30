@@ -6,7 +6,7 @@ export function Petition() {
     <section id="abaixo-assinado" className="relative w-full py-20 md:py-32 lg:py-40 text-white overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg')" }}
+        style={{ backgroundImage: "url('https://www.pontedepedra.tur.br/galeria/hero-bg.jpeg')" }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
       <div className="container relative px-4 md:px-6 z-10 max-w-3xl mx-auto">

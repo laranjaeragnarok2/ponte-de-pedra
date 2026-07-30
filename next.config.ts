@@ -45,6 +45,18 @@ const nextConfig: NextConfig = {
         hostname: 'wallpapers.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.pontedepedra.tur.br',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pontedepedra.tur.br',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
