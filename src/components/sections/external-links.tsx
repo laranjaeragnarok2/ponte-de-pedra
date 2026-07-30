@@ -1,13 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { ExternalLink, Globe, Map, Info, Github } from 'lucide-react';
+import { ExternalLink, Globe, Map, Info } from 'lucide-react';
 
 const links = [
   {
-    title: "Projeto Recanto (GitHub)",
-    description: "Repositório do projeto irmão focado no ecoturismo sustentável e na preservação da região.",
-    url: "https://github.com/laranjaeragnarok2/Recanto",
-    icon: Github,
-    label: "Ver no GitHub"
+    title: "Recanto Ponte de Pedra",
+    description: "Conheça o local onde a natureza e o lazer se encontram. Hospedagem, camping e uma experiência completa.",
+    url: "https://pontedepedra.vercel.app/",
+    icon: Globe,
+    label: "Visitar Site"
   },
   {
     title: "Turismo Paraúna",

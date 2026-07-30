@@ -42,26 +42,21 @@ export function Journey() {
 
         {/* Video Section */}
         <div className="max-w-4xl mx-auto mb-20">
-          <h3 className="text-xl font-bold font-headline mb-4 text-center text-muted-foreground">Status do Curta-Metragem</h3>
-          <div className="aspect-video rounded-3xl flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-950 via-emerald-950/80 to-stone-950 border border-emerald-500/20 shadow-2xl p-6 text-center">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
-            
-            <div className="relative flex flex-col items-center justify-center text-white z-10 max-w-lg space-y-4">
-              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 border border-emerald-500/40 px-3.5 py-1.5 rounded-full shadow-md">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Em Produção & Filmagens
-              </span>
-              
-              <div className="w-16 h-16 rounded-full border border-emerald-500/40 flex items-center justify-center backdrop-blur-md bg-emerald-500/10 shadow-lg">
-                <PlayCircle className="w-10 h-10 text-emerald-400" />
+          <h3 className="text-xl font-bold font-headline mb-4 text-center text-muted-foreground">O Curta-Metragem</h3>
+          <div className="aspect-video rounded-2xl flex items-center justify-center relative overflow-hidden group cursor-pointer shadow-2xl">
+            <Image
+              src="https://i.postimg.cc/xTgXxCwP/3da24e5b95f6ac4f18877d086882e80c.jpg"
+              alt="Thumbnail do curta-metragem"
+              fill={true}
+              className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-colors group-hover:bg-black/40"></div>
+            <div className="relative flex flex-col items-center justify-center text-white z-10">
+              <div className="w-20 h-20 rounded-full border-2 border-white/50 flex items-center justify-center backdrop-blur-sm bg-white/10 transition-all duration-300 group-hover:scale-110 group-hover:border-white/80">
+                <PlayCircle className="w-12 h-12 text-white/90" />
               </div>
-              
-              <div className="space-y-1">
-                <h4 className="font-headline text-2xl font-bold text-white">Documentário Ponte de Pedra</h4>
-                <p className="text-sm text-slate-300">Gravações de campo, entrevistas com especialistas e expedições arqueológicas em andamento.</p>
-              </div>
-
-              <span className="inline-block text-xs font-mono text-emerald-400/80 pt-2">Teaser Oficial e Lançamento em Breve</span>
+              <p className="mt-4 font-headline text-lg font-semibold [text-shadow:_1px_1px_3px_rgb(0_0_0_/_60%)]">Assista ao Curta</p>
+              <span className="text-sm text-white/70 mt-1">(Em Breve)</span>
             </div>
           </div>
         </div>

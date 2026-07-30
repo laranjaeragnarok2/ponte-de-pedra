@@ -2,7 +2,6 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
-import { RecantoSection } from "@/components/sections/recanto";
 import { Journey } from "@/components/sections/journey";
 import { Team } from "@/components/sections/team";
 import { Gallery } from "@/components/sections/gallery";
@@ -20,7 +19,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
-        <RecantoSection />
         <Journey />
         <Team />
         <Gallery />

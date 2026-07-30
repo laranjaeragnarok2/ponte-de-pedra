@@ -7,10 +7,9 @@ import { Menu, Film, PenSquare } from 'lucide-react';
 
 const navLinks = [
   { href: '#sobre', label: 'A Causa' },
-  { href: '#recanto', label: 'Projeto Recanto' },
   { href: '#jornada', label: 'Jornada' },
   { href: '#equipe', label: 'Equipe' },
-  { href: '#galeria', label: 'Documentos' },
+  { href: '#galeria', label: 'Galeria' },
   { href: '#localizacao', label: 'Local' },
   { href: '#parceiros', label: 'Apoiadores' },
 ];
