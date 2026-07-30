@@ -1,4 +1,4 @@
-import { Mountain, Archeology, ShieldAlert, Sparkles } from "lucide-react";
+import { Mountain, History, ShieldAlert, Sparkles } from "lucide-react";
 
 const facets = [
   {
@@ -11,7 +11,7 @@ const facets = [
     color: "from-emerald-950/20 via-slate-900/30 to-emerald-900/10 border-emerald-500/30 text-emerald-400",
   },
   {
-    icon: Archeology,
+    icon: History,
     badge: "Arqueologia (Sítio IPHAN GO00381)",
     title: "Vestígios de Culturas Milenares",
     description:
